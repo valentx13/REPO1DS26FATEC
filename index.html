@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projeto Responsivo</title>
+
+    <!-- Bulma - framework de responsividade -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    >
+</head>
+
+<body>
+
+    <!-- ==================== MENU ==================== -->
+
+    <nav class="navbar is-primary">
+        <div class="container">
+
+            <div class="navbar-brand">
+
+                <a class="navbar-item" href="#">
+                    <strong>Meu Projeto</strong>
+                </a>
+
+                <!-- Botão do menu no celular -->
+                <a
+                    role="button"
+                    class="navbar-burger"
+                    id="menuButton"
+                    aria-label="menu"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+
+            </div>
+
+            <div class="navbar-menu" id="menu">
+
+                <div class="navbar-end">
+
+                    <a class="navbar-item" href="#tabela">
+                        Tabela
+                    </a>
+
+                    <a class="navbar-item" href="#formulario">
+                        Formulário
+                    </a>
+
+                    <a class="navbar-item" href="#galeria">
+                        Galeria
+                    </a>
+
+                    <a class="navbar-item" href="#chat">
+                        Chat
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- ==================== CONTEÚDO ==================== -->
+
+    <main class="container">
+
+        <!-- Apresentação -->
+        <section class="section has-text-centered">
+
+            <h1 class="title">
+                Projeto Responsivo
+            </h1>
+
+            <p class="subtitle">
+                HTML + CSS + JavaScript + Bulma
+            </p>
+
+        </section>
+
+
+        <!-- ==================== TABELA ==================== -->
+
+        <section class="section" id="tabela">
+
+            <h2 class="title is-3">
+                Tabela de Produtos
+            </h2>
+
+            <div class="table-container">
+
+                <table class="table is-fullwidth is-striped is-hoverable">
+
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Categoria</th>
+                            <th>Preço</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Notebook</td>
+                            <td>Eletrônicos</td>
+                            <td>R$ 3.500,00</td>
+                            <td>
+                                <span class="tag is-success">
+                                    Disponível
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Smartphone</td>
+                            <td>Eletrônicos</td>
+                            <td>R$ 2.000,00</td>
+                            <td>
+                                <span class="tag is-success">
+                                    Disponível
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Fone de ouvido</td>
+                            <td>Acessórios</td>
+                            <td>R$ 250,00</td>
+                            <td>
+                                <span class="tag is-warning">
+                                    Poucas unidades
+                                </span>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== FORMULÁRIO ==================== -->
+
+        <section class="section" id="formulario">
+
+            <h2 class="title is-3">
+                Formulário de Contato
+            </h2>
+
+            <form id="contactForm">
+
+                <div class="field">
+
+                    <label class="label">
+                        Nome
+                    </label>
+
+                    <div class="control">
+
+                        <input
+                            class="input"
+                            type="text"
+                            id="nome"
+                            placeholder="Digite seu nome"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="field">
+
+                    <label class="label">
+                        E-mail
+                    </label>
+
+                    <div class="control">
+
+                        <input
+                            class="input"
+                            type="email"
+                            id="email"
+                            placeholder="Digite seu e-mail"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="field">
+
+                    <label class="label">
+                        Mensagem
+                    </label>
+
+                    <div class="control">
+
+                        <textarea
+                            class="textarea"
+                            id="mensagem"
+                            placeholder="Digite sua mensagem"
+                            required
+                        ></textarea>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="button is-primary"
+                    type="submit"
+                >
+                    Enviar formulário
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- ==================== GALERIA ==================== -->
+
+        <section class="section" id="galeria">
+
+            <h2 class="title is-3">
+                Galeria de Imagens
+            </h2>
+
+            <div class="columns is-multiline">
+
+                <div class="column is-one-third">
+
+                    <figure class="image">
+                        <img
+                            src="https://picsum.photos/600/400?random=1"
+                            alt="Imagem 1"
+                        >
+                    </figure>
+
+                </div>
+
+
+                <div class="column is-one-third">
+
+                    <figure class="image">
+                        <img
+                            src="https://picsum.photos/600/400?random=2"
+                            alt="Imagem 2"
+                        >
+                    </figure>
+
+                </div>
+
+
+                <div class="column is-one-third">
+
+                    <figure class="image">
+                        <img
+                            src="https://picsum.photos/600/400?random=3"
+                            alt="Imagem 3"
+                        >
+                    </figure>
+
+                </div>
+
+            </div>
+
+
+            <div class="has-text-centered">
+
+                <button
+                    class="button is-link"
+                    id="changeImage"
+                >
+                    Trocar imagens
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== CHAT ==================== -->
+
+        <section class="section" id="chat">
+
+            <h2 class="title is-3">
+                Atendimento
+            </h2>
+
+            <p class="mb-4">
+                Clique no botão abaixo para abrir o chat.
+            </p>
+
+            <button
+                class="button is-primary"
+                id="openChat"
+            >
+                💬 Abrir Chat
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==================== MODAL DO CHAT ==================== -->
+
+    <div class="modal" id="chatModal">
+
+        <div class="modal-background"></div>
+
+
+        <div class="modal-card">
+
+            <!-- Cabeçalho -->
+
+            <header class="modal-card-head">
+
+                <p class="modal-card-title">
+                    💬 Chat de Atendimento
+                </p>
+
+                <button
+                    class="delete"
+                    id="closeChat"
+                    aria-label="fechar"
+                ></button>
+
+            </header>
+
+
+            <!-- Corpo -->
+
+            <section class="modal-card-body">
+
+                <div class="notification is-info is-light">
+
+                    Olá! 👋
+                    <br>
+                    Como podemos ajudar?
+
+                </div>
+
+
+                <div class="field">
+
+                    <label class="label">
+                        Sua mensagem
+                    </label>
+
+                    <div class="control">
+
+                        <textarea
+                            class="textarea"
+                            id="chatMessage"
+                            placeholder="Digite sua mensagem..."
+                        ></textarea>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Rodapé -->
+
+            <footer class="modal-card-foot">
+
+                <button
+                    class="button is-primary"
+                    id="sendChat"
+                >
+                    Enviar
+                </button>
+
+                <button
+                    class="button"
+                    id="cancelChat"
+                >
+                    Cancelar
+                </button>
+
+            </footer>
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
